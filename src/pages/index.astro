@@ -8,6 +8,13 @@ import MailIcon from '../components/icons/Mail.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Projects from '../components/Projects.astro';
 import ProjectIcon from '../components/icons/Project.astro'
+import AboutmeIcon from '../components/icons/Aboutme.astro';
+import HtmlIcon from '../components/icons/Html.astro';
+import CssIcon from '../components/icons/Css.astro';
+import TailwindIcon from '../components/icons/Tailwind.astro';
+import JavaIcon from '../components/icons/Java.astro';
+import AstroIcon from '../components/icons/Astroicon.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Portfolio de Nicolás Bock - Desarrollador y Programador web"
@@ -38,13 +45,39 @@ description='Desarrollador web eficiente rapido y de calidad'
 				</SocialPill>
 			</nav>
 		</SectionContainer>
-<SectionContainer id="proyecto" class="">
+		<SectionContainer id="sobremi">
+		<h2 class="text-2xl mt-[100px] py-4  font-semibold mb-5 flex gap-x-2 items-center">
+			<AboutmeIcon class="size-6"/>
+			Sobre mi
+		</h2>
+		<p class="text-xl">Soy una persona proactiva la cual le gusta participar de proyectos, estar en constante aprendimiento, trabajar en equipo, trabajar en proyectos personales, ganar nuevas experiiencias y formarme cada dia mas. </p>
+		<h4 class="text-2xl mt-[100px] font-semibold mb-5 flex gap-x-2 justify-center items-center">
+			Skills
+		</h4>
+	</SectionContainer>
 	
+		<div class="flex gap-4 mt-8 flex-wrap justify-center" >
+
+			<HtmlIcon class="size-6"/>
+			<CssIcon class="size-6"/>
+			<JavaIcon class="size-6"/>
+		</div>
+		<div class=" flex gap-4 mt-8 flex-wrap justify-center">
+			<TailwindIcon class="size-6"/>
+			
+			<AstroIcon class="size-6"/>
+		</div>
+			
+
+		<SectionContainer id="proyecto" class="mt-[400px]">
+	
+			<SectionContainer id="proyecto" class="">
 	<h2 class="text-2xl font-semibold mb-5 flex gap-x-2 items-center">
 		<ProjectIcon class="size-6"/>
 		Proyectos
 	</h2>
 	<Projects/>
 </SectionContainer> 
+
 </main>
 </Layout>
